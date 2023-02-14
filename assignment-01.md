@@ -18,29 +18,29 @@ In this assignment, you will learn more about asymptotic notation, parallelism, 
 .  
 . 
   - 1b. Is $2^{2^n} \in O(2^n)$? Why or why not?     
-.  
+.  No, because there does not exist a value c for which 2^{2^n} < c*2^n for all values above a certain n.
 .  
 .  
 .  
 .  
   - 1c. Is $n^{1.01} \in O(\mathrm{log}^2 n)$?    
-.  
-.  
+    
+.  No, because there does not exist a value c for which n^{1.01} < c*\mathrm{log}^2 n for all values above a certain n.
 .  
 .  
 
   - 1d. Is $n^{1.01} \in \Omega(\mathrm{log}^2 n)$?  
-.  
+.  No, because there exists a value c for which n^{1.01} > c*\mathrm{log}^2 n for all values above a certain n.
 .  
 .  
 .  
   - 1e. Is $\sqrt{n} \in O((\mathrm{log} n)^3)$?  
-.  
+.  Yes, because there exists a value c for which \sqrt{n} < c*\mathrm{log} n)^3 for all values of n above a certain value.
 .  
 .  
 .  
   - 1f. Is $\sqrt{n} \in \Omega((\mathrm{log} n)^3)$?  
-.  
+.  Yes, because there exists a value c for which \sqrt{n} > c*\mathrm{log} n)^3 for all values of n above a certain value.
 
 
 2. **SPARC to Python** (12 pts)
