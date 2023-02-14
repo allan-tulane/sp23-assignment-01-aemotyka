@@ -2,7 +2,7 @@
 
 # CMPS 2200 Assignment 1
 
-**Name:**_________________________
+**Name:**_Alex Motyka_
 
 
 In this assignment, you will learn more about asymptotic notation, parallelism, functional languages, and algorithmic cost models. As in the recitation, some of your answer will go here and some will go in `main.py`. You are welcome to edit this `assignment-01.md` file directly, or print and fill in by hand. If you do the latter, please scan to a file `assignment-01.pdf` and push to your github repository. 
@@ -12,7 +12,7 @@ In this assignment, you will learn more about asymptotic notation, parallelism, 
 1. (2 pts ea) **Asymptotic notation** (12 pts)
 
   - 1a. Is $2^{n+1} \in O(2^n)$? Why or why not? 
-.  
+.  Yes, because 2^n+1=2*2^n which \in O(2^n)
 .  
 .  
 .  
@@ -62,7 +62,7 @@ $$
 
   - 2b. (6 pts) What does this function do, in your own words?  
 
-.  
+.  This function returns the x'th number of the Fibonacci sequence. i.e. if the input x is 1 or 0, it returns 1 or 0 respectively- this is the base case. Otherwise, it returns the sum of the previous two numbers in the sequence, calculated by recursively calling the function on x-1 and x-2 respectively. The function the repeats until it reaches the base case.
 .  
 .  
 .  
@@ -92,7 +92,6 @@ E.g., `longest_run([2,12,12,8,12,12,12,0,12,1], 12) == 3`
 
   - 3b. (4 pts) What is the Work and Span of this implementation?  
 
-.  
 .  
 .  
 .  
