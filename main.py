@@ -15,7 +15,7 @@ def longest_run(mylist, key):
     prevVal = False
     for i in range(mylist.len()):
       if mylist[i] == key:
-        run++
+        run+=1
         prevVal = True
       elif mylist[i] != key: 
         prevVal = False
@@ -38,7 +38,21 @@ class Result:
     
     
 def longest_run_recursive(mylist, key):
-    pass
+  result = Result(0, 0, 0, False)
+  if len(mylist) == 1 and mylist[0] == key:
+    result.longest_run+=1
+    result.is_entire_range = True
+    return result
+  elif len(mylist) == 1 and mylist[0] != key:
+    if result.longest_size > result.left_size:
+      result.left_size = result.longest_size
+    result.longest_size = 0
+    result.is_entire_range = False
+    return result
+  elif len(mylist) == 0:
+    return result
+  else:
+    return max(longest_run_recursive(mylist[:len(mylist)//2], key).left_size, longest_run_recursive(mylist[len(mylist)//2 + 1:], key).left_size)
 
 ## Feel free to add your own tests here.
 def test_longest_run():
